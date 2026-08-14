@@ -45,40 +45,6 @@
       --table-head: #1e40af
     }
 
-    html[data-theme="dark"] {
-      color-scheme: dark;
-      --bg: #0f172a;
-      --surface: #172033;
-      --surface-2: #1e293b;
-      --text: #f1f5f9;
-      --muted: #cbd5e1;
-      --border: #475569;
-      --primary: #bfdbfe;
-      --link: #93c5fd;
-      --button: #93c5fd;
-      --button-text: #0f172a;
-      --field: #5eead4;
-      --field-bg: #123c39;
-      --field-text: #d5fffa;
-      --quick-bg: #0f2942;
-      --quick-border: #60a5fa;
-      --quick-text: #dbeafe;
-      --note-bg: #332900;
-      --note-border: #facc15;
-      --note-text: #fef3c7;
-      --danger-bg: #3b1212;
-      --danger-border: #ef4444;
-      --danger-text: #fecaca;
-      --deep-bg: #1e293b;
-      --deep-border: #94a3b8;
-      --deep-text: #e2e8f0;
-      --focus: #c4b5fd;
-      --shadow: 0 5px 18px rgba(0, 0, 0, .38);
-      --cover: #111827;
-      --cover-sub: #cbd5e1;
-      --table-head: #1d4ed8
-    }
-
     * {
       box-sizing: border-box
     }
@@ -486,14 +452,6 @@
 
     .label-duty {
       color: #8a5a00
-    }
-
-    html[data-theme="dark"] .label-triggers {
-      color: #fca5a5
-    }
-
-    html[data-theme="dark"] .label-duty {
-      color: #fde68a
     }
 
     .act-now,
@@ -1212,6 +1170,122 @@
       }
     }
   </style>
+  <style id="system-theme-only">
+    /* === TEMA ESTRICTAMENTE LIGADO AL DISPOSITIVO === */
+    :root {
+      color-scheme: light dark;
+      --primary: #1a365d;
+      --primary-light: #2b6cb0;
+      --text-main: #2d3748;
+      --text-muted: #4a5568;
+      --bg-body: #ffffff;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+      --card-bg: #ffffff;
+      --table-header-bg: #2b6cb0;
+      --table-header-text: #ffffff;
+      --accent-quote: #b91c1c;
+      --field: #0f766e;
+      --field-bg: #ecfdf5;
+      --danger: #b91c1c;
+      --warning: #92400e;
+      --duty: #8a5a00;
+      --surface: #ffffff;
+      --shadow-soft: 0 4px 18px rgba(15, 23, 42, .10);
+      --shadow-card: 0 10px 30px rgba(15, 23, 42, .08);
+      --cover-bg: #1a365d;
+      --cover-sub: #e2e8f0;
+      --cover-border: #2b6cb0;
+      --danger-bg: #fff5f5;
+      --danger-border: #e53e3e;
+      --danger-text: #7f1d1d;
+      --info-bg: #ebf8ff;
+      --info-border: #3182ce;
+      --info-text: #1e3a5f;
+      --note-bg: #fff8e1;
+      --note-border: #d97706;
+      --note-text: #713f12;
+      --alert-bg: #fff3cd;
+      --alert-border: #b7791f;
+      --alert-text: #684600;
+      --callout-blue-bg: #ebf8ff;
+      --callout-blue-border: #3182ce;
+      --callout-blue-text: #1e3a5f;
+      --callout-red-bg: #fff5f5;
+      --callout-red-border: #e53e3e;
+      --callout-red-text: #7f1d1d;
+      --callout-yellow-bg: #fff8e1;
+      --callout-yellow-border: #d97706;
+      --callout-yellow-text: #713f12;
+      --focus-ring: rgba(43, 108, 176, .18);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #0f172a;
+        --primary-light: #7db7ff;
+        --text-main: #f8fafc;
+        --text-muted: #cbd5e1;
+        --bg-body: #0f172a;
+        --bg-light: #1e293b;
+        --border-color: #475569;
+        --card-bg: #1e293b;
+        --table-header-bg: #2563eb;
+        --table-header-text: #ffffff;
+        --accent-quote: #fca5a5;
+        --field: #5eead4;
+        --field-bg: #123c39;
+        --danger: #fca5a5;
+        --warning: #fde68a;
+        --duty: #fde047;
+        --surface: #1e293b;
+        --shadow-soft: 0 4px 18px rgba(0, 0, 0, .38);
+        --shadow-card: 0 10px 30px rgba(0, 0, 0, .34);
+        --cover-bg: #111827;
+        --cover-sub: #cbd5e1;
+        --cover-border: #60a5fa;
+        --danger-bg: #3b1212;
+        --danger-border: #ef4444;
+        --danger-text: #fecaca;
+        --info-bg: #0f2942;
+        --info-border: #60a5fa;
+        --info-text: #dbeafe;
+        --note-bg: #332900;
+        --note-border: #facc15;
+        --note-text: #fef3c7;
+        --alert-bg: #2c2200;
+        --alert-border: #eab308;
+        --alert-text: #fde68a;
+        --callout-blue-bg: #0f2942;
+        --callout-blue-border: #60a5fa;
+        --callout-blue-text: #dbeafe;
+        --callout-red-bg: #3b1212;
+        --callout-red-border: #ef4444;
+        --callout-red-text: #fecaca;
+        --callout-yellow-bg: #332900;
+        --callout-yellow-border: #facc15;
+        --callout-yellow-text: #fef3c7;
+        --focus-ring: rgba(125, 183, 255, .32);
+      }
+
+      .field-summary {
+        color: #d5fffa
+      }
+
+      tr:nth-child(even) {
+        background-color: #0f172a
+      }
+
+      a.law-ref:hover {
+        color: #fff
+      }
+    }
+
+    /* La interfaz no expone ningún control manual de tema. */
+    .theme-toggle {
+      display: none !important
+    }
+  </style>
 </head>
 
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
@@ -1220,8 +1294,7 @@
       <div class="field-brand">Manual Laboral de Campo</div><input aria-controls="searchResults"
         aria-label="Buscar situaciones en el manual" autocomplete="off" class="field-search" enterkeyhint="search"
         id="fieldSearch" placeholder="Busca: “sinpa”, “doblete”, “castigo”, “sobre cerrado”…" type="search" /><a
-        class="field-index-btn" href="#indice">Índice</a><button aria-label="Cambiar tema claro u oscuro"
-        class="theme-toggle" id="themeToggle" title="Cambiar tema" type="button">◐</button>
+        class="field-index-btn" href="#indice">Índice</a>
     </div>
   </div>
   <div aria-live="polite" class="search-results" id="searchResults"></div>
@@ -4472,19 +4545,16 @@
     </article>
   </main>
   <script>(() => {
-      const root = document.documentElement, themeBtn = document.getElementById('themeToggle'), toolbar = document.querySelector('.field-toolbar');
-      let stored = null; try { stored = localStorage.getItem('manual-theme') } catch (_) { } if (stored === 'light' || stored === 'dark') root.dataset.theme = stored;
-      const syncTheme = () => { if (!themeBtn) return; const dark = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); themeBtn.textContent = dark ? '☀' : '☾'; themeBtn.setAttribute('aria-label', dark ? 'Usar tema claro' : 'Usar tema oscuro') }; syncTheme();
-      themeBtn?.addEventListener('click', () => { const dark = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); root.dataset.theme = dark ? 'light' : 'dark'; try { localStorage.setItem('manual-theme', root.dataset.theme) } catch (_) { } syncTheme() });
-      let ticking = false; const compact = () => { const yes = scrollY > 120; toolbar?.classList.toggle('compact', yes); document.body.classList.toggle('toolbar-compact', yes); ticking = false }; addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(compact); ticking = true } }, { passive: true }); compact();
-      const input = document.getElementById('fieldSearch'), wrap = document.getElementById('searchResults');
-      const items = [...document.querySelectorAll('.point-card,.dossier-card,.norm-card')]; const norm = s => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); const esc = s => s.replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
-      function typeOf(el) { return el.classList.contains('point-card') ? 'Derecho / regla' : el.classList.contains('dossier-card') ? 'Acción / expediente' : 'Norma / fuente' }
-      function render() { if (!input || !wrap) return; const q = norm(input.value.trim()); if (q.length < 2) { wrap.classList.remove('active'); wrap.innerHTML = ''; return } const toks = q.split(/\s+/).filter(Boolean); const hits = items.map(el => { const text = norm(el.innerText); const score = toks.reduce((n, t) => n + (text.includes(t) ? 1 : 0), 0); return { el, score } }).filter(x => x.score === toks.length).slice(0, 12); wrap.classList.add('active'); const panel = document.createElement('div'); panel.className = 'search-panel'; if (!hits.length) { panel.innerHTML = '<div class="search-hit"><strong>Sin coincidencias</strong><small>Prueba una frase de campo o una acción: “sinpa”, “propina”, “ST-7”, “RIT”, “denuncia”, “vacaciones”…</small></div>' } else hits.forEach(({ el }) => { const a = document.createElement('a'); a.className = 'search-hit'; a.href = '#' + el.id; const title = el.querySelector('h3')?.innerText || el.id; const raw = el.innerText.replace(/\s+/g, ' ').trim(); const pos = Math.max(0, norm(raw).indexOf(toks[0])); const start = Math.max(0, pos - 55); a.innerHTML = '<span class="type">' + esc(typeOf(el)) + '</span><strong>' + esc(title) + '</strong><small>' + esc((start ? '…' : '') + raw.slice(start, start + 210) + (raw.length > start + 210 ? '…' : '')) + '</small>'; a.addEventListener('click', () => { wrap.classList.remove('active'); input.blur() }); panel.appendChild(a) }); wrap.innerHTML = ''; wrap.appendChild(panel) }
-      input?.addEventListener('input', render); input?.addEventListener('keydown', e => { if (e.key === 'Escape') { input.value = ''; render(); input.blur() } }); document.addEventListener('click', e => { if (!e.target.closest('.field-toolbar') && !e.target.closest('#searchResults')) wrap?.classList.remove('active') });
-      document.querySelectorAll('.route-choices a[href^="#canal-"]').forEach(a => a.addEventListener('click', () => { const dossier = a.closest('.dossier-card'); const target = document.querySelector(a.getAttribute('href')); const ret = target?.querySelector('.channel-return'); if (dossier && ret) { ret.hidden = false; ret.href = '#' + dossier.id; const t = dossier.querySelector('h3')?.innerText || 'expediente'; ret.textContent = '← Volver a: ' + t } }));
-      function openHash() { const id = decodeURIComponent(location.hash.slice(1)); if (!id) return; const target = document.getElementById(id); if (target?.tagName === 'DETAILS') target.open = true; const parent = target?.closest('details'); if (parent) parent.open = true } addEventListener('hashchange', openHash); openHash();
-      const prior = new Map(); addEventListener('beforeprint', () => { document.querySelectorAll('details').forEach(d => { prior.set(d, d.open); d.open = true }) }); addEventListener('afterprint', () => { prior.forEach((v, d) => d.open = v); prior.clear() });
+      const toolbar = document.querySelector('.field-toolbar');
+      let ticking = false;
+      function compact() {
+        const yes = scrollY > 120;
+        toolbar?.classList.toggle('compact', yes);
+        document.body.classList.toggle('toolbar-compact', yes);
+        ticking = false;
+      }
+      addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(compact); ticking = true } }, { passive: true });
+      compact();
     })();</script>
 </body>
 
